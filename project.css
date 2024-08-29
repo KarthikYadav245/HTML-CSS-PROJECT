@@ -1,0 +1,160 @@
+/* Reset some default browser styling */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Container settings */
+.container {
+  background-image: url(./projectimages/ocean-bg.jpg);
+  width: 100%;
+  max-width: 4600px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header styles */
+.head1 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#button {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Part 1 */
+#one {
+  text-align: center;
+}
+
+/* Part 2 */
+.div2 {
+  padding: 20px;
+  text-align: center;
+}
+
+#par1, #par2, #par3, #par4 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Responsive adjustments for Part 3 */
+.three {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.item {
+  flex: 1 1 300px;
+  box-sizing: border-box;
+}
+
+.item img {
+  max-width: 460px;
+  height: auto;
+}
+
+.inside, .inside2 {
+  padding: 20px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Part 4 */
+.five {
+  padding: 20px;
+  text-align: center;
+}
+
+.card, #trade, #member, #global {
+  text-align: center;
+  margin-bottom: 20px;
+  min-width: 460px;
+  border: 2px solid black;
+}
+
+.card img, #trade img, #member img, #global img {
+  max-width: 460;
+  height: auto;
+ 
+}
+
+/* Footer styles */
+footer {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.footer {
+  text-align: center;
+}
+
+#ip1, #ip2, #ip3, #textarea {
+  width: calc(100% - 22px);
+  margin: 10px 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.contact {
+  margin-top: 20px;
+}
+
+.icons {
+  margin-top: 10px;
+}
+
+.icons i {
+  font-size: 1.5em;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .three {
+    flex-direction: column;
+  }
+  
+  .item {
+    flex: 1 1 100%;
+  }
+  
+  #button {
+    width: 150px;
+  }
+  
+  #ip1, #ip2, #ip3, #textarea {
+    width: 100%;
+  }
+}
